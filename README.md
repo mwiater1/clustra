@@ -3,7 +3,7 @@
 Clustra is a framework for DIY IOT devices.
 
 ## Built With
-* [Gradle](https://gradle.org/) - Source of all of the flag images.
+* [Gradle](https://gradle.org/) - Build System.
 
 ## License
 
