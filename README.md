@@ -18,4 +18,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [2]: http://materializecss.com/
 [3]: http://sparkjava.com/
 [4]: https://raft.github.io/
-[5]: /wiki
+[5]: ../../wiki
