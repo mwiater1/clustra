@@ -1,8 +1,22 @@
 group 'com.mateuszwiater.csc495.clustra'
 version '1.0-SNAPSHOT'
 
+apply plugin: 'java'
+apply plugin: 'application'
+
+run {
+    mainClassName = 'com.mateuszwiater.csc495.clustra.Main'
+}
+
 repositories {
     mavenCentral()
+    maven {
+        url 'https://oss.sonatype.org/content/groups/public'
+    }
+}
+
+dependencies {
+    compile 'com.pi4j:pi4j-core:1.2-SNAPSHOT'
 }
 
 task wrapper(type: Wrapper) {
