@@ -10,6 +10,7 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Hello World!");
 
+        GpioFactory.setDefaultProvider(new OrangePiGpioProvider());
         final GpioController gpio = GpioFactory.getInstance();
 
         final GpioPinDigitalOutput pin1 = gpio.provisionDigitalOutputPin(OrangePiPin.GPIO_01, LOW);
