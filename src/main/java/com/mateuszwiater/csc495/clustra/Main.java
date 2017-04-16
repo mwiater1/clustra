@@ -13,8 +13,8 @@ public class Main {
         GpioFactory.setDefaultProvider(new OrangePiGpioProvider());
         final GpioController gpio = GpioFactory.getInstance();
 
-        final GpioPinDigitalOutput pin1 = gpio.provisionDigitalOutputPin(OrangePiPin.GPIO_23, LOW);
-        final GpioPinDigitalOutput pin2 = gpio.provisionDigitalOutputPin(OrangePiPin.GPIO_24, HIGH);
+        final GpioPinDigitalOutput pin1 = gpio.provisionDigitalOutputPin(OrangePiPin.GPIO_13, LOW);
+        final GpioPinDigitalOutput pin2 = gpio.provisionDigitalOutputPin(OrangePiPin.GPIO_10, HIGH);
 
         while (true) {
             pin1.toggle();
