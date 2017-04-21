@@ -21,6 +21,7 @@ repositories {
 dependencies {
 //    compile name: 'pi4j-core-1.2-SNAPSHOT'
     compile 'com.pi4j:pi4j-core:1.2-SNAPSHOT'
+    compile 'com.pi4j:pi4j-device:1.2-SNAPSHOT'
 }
 
 task wrapper(type: Wrapper) {
