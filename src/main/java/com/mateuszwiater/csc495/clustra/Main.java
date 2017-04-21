@@ -17,7 +17,8 @@ public class Main {
 //        GpioFactory.setDefaultProvider(new OrangePiGpioProvider());
         final GpioController gpio = GpioFactory.getInstance();
 
-        Arrays.asList(GPIO_00, GPIO_01, GPIO_02, GPIO_03, GPIO_04, GPIO_05, GPIO_11, GPIO_12, GPIO_13, GPIO_15, GPIO_16, GPIO_07).stream()
+        Arrays.stream(OrangePiPin.allPins())
+                .filter(p -> p.getAddress() <= 16)
                 .map(p -> gpio.provisionDigitalInputPin(p, PinPullResistance.PULL_DOWN))
                 .forEach(p -> {
                             System.out.println("Adding: " + p.getName());
