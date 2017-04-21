@@ -10,13 +10,17 @@ run {
 
 repositories {
     mavenCentral()
-    flatDir {
-        dirs 'libs'
+    maven {
+        url 'https://oss.sonatype.org/content/groups/public'
     }
+//    flatDir {
+//        dirs 'libs'
+//    }
 }
 
 dependencies {
-    compile name: 'pi4j-core-1.2-SNAPSHOT'
+//    compile name: 'pi4j-core-1.2-SNAPSHOT'
+    compile 'com.pi4j:pi4j-core:1.2-SNAPSHOT'
 }
 
 task wrapper(type: Wrapper) {
