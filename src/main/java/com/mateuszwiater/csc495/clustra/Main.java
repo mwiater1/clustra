@@ -19,7 +19,7 @@ public class Main {
 
         Arrays.stream(OrangePiPin.allPins())
                 .filter(p -> !Arrays.asList(8, 9).contains(p.getAddress()))
-                .filter(p -> p.getAddress() <= 16 || Arrays.asList(21, 22).contains(p.getAddress()))
+                .filter(p -> p.getAddress() <= 16 || Arrays.asList(21, 23).contains(p.getAddress()))
                 .map(p -> gpio.provisionDigitalInputPin(p, PinPullResistance.PULL_DOWN))
                 .forEach(p -> {
                             System.out.println("Adding: " + p.getName());
