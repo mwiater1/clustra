@@ -17,7 +17,7 @@ public class Main {
 //        GpioFactory.setDefaultProvider(new OrangePiGpioProvider());
         final GpioController gpio = GpioFactory.getInstance();
 
-        Arrays.stream(OrangePiPin.allPins())
+        Arrays.stream(RaspiPin.allPins())
                 .filter(p -> p.getAddress() <= 16)
                 .map(p -> gpio.provisionDigitalInputPin(p, PinPullResistance.PULL_DOWN))
                 .forEach(p -> {
