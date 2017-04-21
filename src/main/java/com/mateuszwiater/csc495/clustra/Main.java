@@ -18,7 +18,7 @@ public class Main {
         final GpioController gpio = GpioFactory.getInstance();
 
         Arrays.stream(OrangePiPin.allPins())
-                .filter(p -> !Arrays.asList(8, 10).contains(p.getAddress()))
+                .filter(p -> !Arrays.asList(8, 9).contains(p.getAddress()))
                 .filter(p -> p.getAddress() <= 16)
                 .map(p -> gpio.provisionDigitalInputPin(p, PinPullResistance.PULL_DOWN))
                 .forEach(p -> {
