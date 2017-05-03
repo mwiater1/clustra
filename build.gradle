@@ -5,6 +5,7 @@ apply plugin: 'java'
 apply plugin: 'application'
 
 run {
+    standardInput = System.in
     mainClassName = 'com.mateuszwiater.csc495.clustra.Main'
 }
 
@@ -13,15 +14,13 @@ repositories {
     maven {
         url 'https://oss.sonatype.org/content/groups/public'
     }
-//    flatDir {
-//        dirs 'libs'
-//    }
 }
 
 dependencies {
-//    compile name: 'pi4j-core-1.2-SNAPSHOT'
     compile 'com.pi4j:pi4j-core:1.2-SNAPSHOT'
     compile 'com.pi4j:pi4j-device:1.2-SNAPSHOT'
+    compile 'org.jgroups:jgroups:4.0.2.Final'
+
 }
 
 task wrapper(type: Wrapper) {
