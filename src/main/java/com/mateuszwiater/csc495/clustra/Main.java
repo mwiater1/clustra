@@ -144,7 +144,7 @@ public class Main extends ReceiverAdapter {
         channel = new JChannel();
         channel.connect("TEST");
         channel.setReceiver(this);
-        System.out.println(channel.getProtocolStack().getProtocols());
+        //System.out.println(channel.getProtocolStack().getProtocols());
         this.name = name;
         System.out.println("Starting: " + name);
     }
