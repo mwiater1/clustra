@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Import Fonts-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import CSS-->
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css" media="screen,projection">
+    <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+
+
+    <!--Meta Stuff-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+    <nav class="black">
+        <div class="nav-wrapper container">
+            <a href="#!" class="brand-logo center">Clustra</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="content" class="row">
+
+        </div>
+    </div>
+    <div id="modal1" class="modal bottom-sheet">
+        <div class="modal-content">
+            <h4>Attention!</h4>
+            <p>Connection to CLUSTRA node has been lost. This might mean that the WebSocket simply closed or that the node went offline. Please reload.</p>
+        </div>
+        <div class="modal-footer">
+            <a onclick="location.reload()" href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+
+    <!--Import JavaScript-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/mustache.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

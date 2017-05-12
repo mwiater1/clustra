@@ -1,0 +1,20 @@
+{{#latchViews}}
+<div class="col s12 m6 4l">
+    <div class="card blue-grey darken-4">
+        <div class="card-content white-text">
+            <span class="card-title" contenteditable="true" onblur="setLatchName('{{id}}',this)">{{name}}</span>
+            <h2>State: {{state}}</h2>
+        </div>
+        <div class="card-action">
+            <div class="row">
+                <div class="col s6">
+                    <a class="waves-effect waves-light btn-large green darken-4" onclick="setLatchState('{{id}}','ON')">ON</a>
+                </div>
+                <div class="col s6">
+                    <a class="waves-effect waves-light btn-large red darken-4" onclick="setLatchState('{{id}}','OFF')">OFF</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{/latchViews}}
